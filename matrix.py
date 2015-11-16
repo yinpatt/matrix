@@ -1,12 +1,12 @@
 ###Patrick Leung
 ###vector matrix multiplication
-def vectormatrix(vector, matrix): 
+def vectorMatrixMultiplication(vector, matrix): 
     return [sum([vector[x]*matrix[n][x] for x in range(len(vector))]) for n in range(len(matrix))] 
 
 ##vector example
 vector = [1,2]
 matrix = [[1,2],[5,6]]    
-vectormatrix(vector,matrix) 
+vectorMatrixMultiplication(vector,matrix) 
 
 ####matrix multiplication
 #range(len(matrix1[m])) = no. of rows in matrix 1 = no. of row in the result
